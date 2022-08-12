@@ -1,0 +1,25 @@
+{
+  "name": "dsmext",
+  "displayName": "DsmExt",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "dsm",
+      "aliases": ["Dsm", "dsm"],
+      "extensions": [".ds"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "dsm",
+      "scopeName": "source.ds",
+      "path": "./syntaxes/dsm.tmLanguage.json"
+    }]
+  }
+}
